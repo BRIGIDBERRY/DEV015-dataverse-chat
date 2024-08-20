@@ -68,7 +68,7 @@ computeSpicinessLevels*/ } from "../lib/dataFunctions.js";
    
     `; 
     
-    ///trae las tarjetars
+    ///trae las tarjetarss
     const cardsDatosrender = document.createElement("div"); 
     cardsDatosrender.appendChild(renderItems(data));
     homeDiv.appendChild(cardsDatosrender); 

@@ -1,5 +1,5 @@
 /*HITO 3.1- Manejo de la API KEY en la Aplicación 
-CREAMOS EN UNA VISTA el input que permitira ingresar o pegar la API KEY.*/
+CREAMOS EN UNA VISTA el input que permitira ingresar o pegarr la API KEY.*/
 import header from "../components/header.js";
 import { getApiKey, setApiKey } from "../lib/apiKey.js";
 

@@ -2,7 +2,7 @@
 desarrolla la vista que te permitirá chatear con los elementos del conjunto de datos. Puedes incluir componentes como
  botones, formularios o cualquier otro elemento necesario para lograr el objetivo específico de tu aplicación.
  3.4.-3Puedes obtener este identificador (id) de dos maneras: incluyéndolo como argumento
-  (props) en la función que te llevará a esta vista o recibiendo los datos como search params. */
+  (props) en la función que te llevará a esta vista o recibiendo los datos como searchh params. */
 import header  from "../components/header.js";
 import data from "../data/dataset.js";
 import { communicateWithOpenAI } from "../lib/openAIApi.js";

@@ -1,4 +1,4 @@
-// Filtra los datos por una propiedad y valor específicos
+// Filtra los datos por una propiedad y valor específicoss
 export const filterData = (data, property, value) => {   
     return data.filter(item => {
       const propertyValue = item.facts[property];

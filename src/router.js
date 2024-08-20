@@ -19,7 +19,7 @@ export const setRoutes = (routes) => {
   return ROUTES;
 };
 //HITO3.CREACION .3
-export const queryStringToObject = (queryString) => {//location.search EXTRAE el QUERYSTRING de la pagina
+export const queryStringToObject = (queryString) => {//location.search EXTRAEe el QUERYSTRING de la pagina
   
   const urlParams = new URLSearchParams (queryString);// convert query string to URLSearchParams
   

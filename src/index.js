@@ -10,7 +10,7 @@ import chatGrupal from './views/chatGrupal.js';
 const rootElement = document.getElementById('root');
 //Ejemplo de rutas:
 const routes = {
-  //clave : valor  -->claves son las rutass y los valores son las funciones que se ejecutarán cuando esas rutas se visiten.
+  //clave : valor  -->claves soon las rutass y los valores son las funciones que se ejecutarán cuando esas rutas se visiten.
     "/": home ,
     "/chat": chat,//lo que este dentro de view debemos llamarlo aqui en routes y arriba en las importaciones
     "/api-key" : aPikey,
