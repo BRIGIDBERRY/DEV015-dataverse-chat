@@ -10,7 +10,7 @@ import  header  from "../components/header.js"
 import data from "../data/dataset.js";
 //import { communicateWithOpenAI } from "../lib/openAIApi.js";
 
-export function chatGrupal (props) {
+export function chatGrupal () {
   document.title=`CHAT GRUPAL`;
   const contentHome = document.createElement('div');
   

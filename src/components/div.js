@@ -1,4 +1,4 @@
-//import { renderItems } from './card.js'
+//import { renderItems } from './card.js' para hacer las funciones de filtro en home
 export const labels = () => {
     const divFiltross = document.createElement('div')
     divFiltross.innerHTML = ` 

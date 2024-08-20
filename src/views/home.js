@@ -1,5 +1,5 @@
 import header from "../components/header.js";
-//import footer from "../components/footer.js";
+//import footer from "../components/footer.js"; ponerlo pa que se visualice
 import {labels} from "../components/div.js";
 import {renderItems } from "../components/card.js";
 import data from "../data/dataset.js";

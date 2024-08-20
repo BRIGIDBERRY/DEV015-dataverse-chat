@@ -1,6 +1,6 @@
 import { navigateTo } from "../router.js";
 export const header =() => {
-    // Crear el elemento del encabezado
+    // Crear el elemento del encabezadoo
     const elemtHeader = document.createElement('header');
     elemtHeader.innerHTML = ` 
     <h1 class="title-header">MEXICO PICANTE</h1>

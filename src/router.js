@@ -13,7 +13,7 @@ export const setRootEl = (el) => {
 
 export const setRoutes = (routes) => {
   // optional Throw errors if routes isn't an object
-  // optional Throw errors if routes doesn't define an /error route
+  // optional Throw errorss if routes doesn't define an /error route
   // assign ROUTES
   ROUTES = routes;
   return ROUTES;

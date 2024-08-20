@@ -15,7 +15,7 @@ export function aPikey() {
   <input id="input-apikey" type="text" class="input-api"  placeholder="Ingresa tu APIKEY 🔑" </input>
   <div class="botones-apiKey">
   <button id="borrar-apiKey">Borrar ❌​</button>
-  <button id="guardar-apiKey" type="submit" > GUARDAR API KEY🔒</button>
+  <button id="guardar-apiKey" type="submit" > 🔒GUARDAR API KEY🔒</button>
   </div>
 
     `;

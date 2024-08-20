@@ -6,7 +6,7 @@ export const filterData = (data, property, value) => {
     });   
   };   
   
-  // Ordena los datos por una propiedad en orden ascendente o descendente
+  // Ordena los datos por una propiedad en orden ascendente o descendentee
   export const sortData = (data, property, ascending = true) => {         
     return data.sort((a, b) => {
       if (a[property] < b[property]) return ascending ? -1 : 1;

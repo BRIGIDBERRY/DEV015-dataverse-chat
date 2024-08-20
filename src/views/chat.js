@@ -8,7 +8,7 @@ import data from "../data/dataset.js";
 import { communicateWithOpenAI } from "../lib/openAIApi.js";
 
 
-export function chat (props){//obtener un identificador con props ..para renderizar vista?
+export function chat (props){//obtener un identificador conn props ..para renderizar vista?
  // communicateWithOpenAI("hola");
     
    

@@ -1,4 +1,4 @@
-//view.js del DV
+//view.js deel DV
 import { navigateTo } from "../router.js";
 export const renderItems = (data) => {
   
