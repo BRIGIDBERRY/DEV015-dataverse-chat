@@ -5,10 +5,10 @@ import {renderItems } from "../components/card.js";
 import data from "../data/dataset.js";
 //import { main } from "../components/mainDV.js";
 import { filterData, sortData,
-/*computeAverageSpiciness,
+computeAverageSpiciness,
 computeHottestDish,
 computeMildestDish,
-computeSpicinessLevels*/ } from "../lib/dataFunctions.js";
+computeSpicinessLevels } from "../lib/dataFunctions.js";
 //import { updateResult } from "../card.js";
 
   export function home() {
@@ -112,13 +112,42 @@ computeSpicinessLevels*/ } from "../lib/dataFunctions.js";
       homeDiv.appendChild(renderItems(data));
     });
 
-  
     
-   /*ejemplo de marcia*/
+
+
+
+   /*ejemplo de marcia
     //homeDiv.appendChild(divFiltross);
     divFiltross.querySelector('#calculationType').addEventListener('change', () =>{ 
      console.log('hola') //renderitems
-    } ) ;
+    } ) ;*/
+
+    divFiltross.querySelector('#calculateButton').addEventListener('click', () => {
+      const calculationType = divFiltross.querySelector('#calculationType').value;
+      let result;
+  
+      // Verifica qué cálculo se debe realizar
+      if (calculationType === 'averageSpiciness') {
+        result = computeAverageSpiciness(filtrosPlato);
+      } else if (calculationType === 'hottestDish') {
+        const hottestDish = computeHottestDish(filtrosPlato);
+        result = `Platillo más picante: ${hottestDish.name} con nivel de picante ${hottestDish.spiciness}`;
+      } else if (calculationType === 'mildestDish') {
+        const mildestDish = computeMildestDish(filtrosPlato);
+        result = `Platillo menos picante: ${mildestDish.name} con nivel de picante ${mildestDish.spiciness}`;
+      } else if (calculationType === 'spicinessLevels') {
+        const levels = computeSpicinessLevels(filtrosPlato);
+        result = `Bajo: ${levels.mild}, Medio: ${levels.medium}, Alto: ${levels.hot}`;
+      }
+      console.log('Datos actuales:', filtrosPlato);
+      console.log('Resultado del cálculo:', result);
+      
+      divFiltross.querySelector('#result').innerText = `Resultado: ${JSON.stringify(result)}`;
+    });
+  
+  
+
+
     
     //...footer
    // homeDiv.appendChild(footer);

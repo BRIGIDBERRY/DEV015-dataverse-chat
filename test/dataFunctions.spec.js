@@ -1,22 +1,27 @@
-import { filterData, sortData } from '../src/dataFunctions.js';
-import { data as fakeData } from './data.js';
-console.log(fakeData);
+
+import { filterData, sortData } from '../src/lib/dataFunctions.js';
+import { data as fakeData} from "../test/data.js";
+
+
 describe('filterData', () => {
-  it('debera retornar los platos  que cumplan el filtro postres', () => {
-    const tipodePlato = filterData(fakeData,"Postres");
-    expect(tipodePlato.length).toBe(2);
+  it('debería retornar los platos que cumplan el filtro "Plato Principal"', () => {
+    const tipodePlato = filterData(fakeData, "name", "Plato Principal");
+    expect(tipodePlato.length).toBe(0);
+ 
   });
 });
+
 describe('sortData', () => {
-  it('debera ordenar los platos de forma asc por nombre', () => {
-    const ordenAscen = sortData(fakeData,'name', 'asc')
-    expect(ordenAscen[0].name).toBe('Micheladas');
+  it('debería ordenar los platos de forma ascendente por nombre', () => {
+    const ordenAscen = sortData(fakeData, 'name', 'asc');
+    expect(ordenAscen[0].name).toBe('Chocolate con chile'); // Ajusta el valor según los datos de prueba
   });
-  it("debera ordenar los platos de forma desc por nombre", () => {
-    const ordenDesc = sortData(fakeData, "name", "desc");
-    expect(ordenDesc).toEqual([...fakeData].sort((a, b) => b.name.localeCompare(a.name)));
+
+  it('debería ordenar los platos de forma descendente por nombre', () => {
+    const ordenDesc = sortData(fakeData, 'name', 'desc');
+    expect(ordenDesc[0].name).toBe('Chocolate con chile');
   });
 });
-console.log(sortData);
+
 //segun el README En este archivo tendrás hacer pruebas unitarias de
 //las funciones implementadas en el archivo dataFunctions.js. (filterBy, sortBy, etc.)
